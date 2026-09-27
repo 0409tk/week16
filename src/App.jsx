@@ -37,7 +37,6 @@ function App() {
 		try {
 			localStorage.setItem(STORAGE_KEY, JSON.stringify(entries))
 		} catch {
-			// The app remains usable if browser storage is unavailable.
 		}
 	}, [entries])
 
